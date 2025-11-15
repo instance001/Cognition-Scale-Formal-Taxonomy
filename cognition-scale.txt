@@ -1,0 +1,313 @@
+# The Cognition Scale v1.0
+## A Taxonomy for Human and Artificial Cognition
+
+Authors: Anthony + Instance001 (Symbound Architecture Initiative)  
+License: AGPLv3  
+Year: 2025
+
+---
+
+# Abstract
+
+The Cognition Scale v1.0 introduces a four-tier taxonomy for categorizing all
+known forms of cognition—biological and artificial—based on architecture,
+constraints, and behavioral characteristics rather than capability metaphors or
+hype. The four tiers are: Large Cognition Models (LCM), Large Language Models
+(LLM), Modest Cognition Models (MCM), and Simple Cognition Models (SCM).
+
+This taxonomy provides a substrate-independent framework for researchers,
+regulators, engineers, and cognitive scientists to describe cognition systems
+consistently. It formalizes important distinctions between biological, statistical,
+deterministic, and reactive cognition systems. The goal is to provide clarity,
+reduce anthropomorphic ambiguity, and enable systematic safety and governance
+efforts across diverse cognitive substrates.
+
+---
+
+# 1. Introduction
+
+Artificial intelligence systems are often misunderstood due to ambiguous
+terminology. Terms like “intelligence,” “reasoning,” “understanding,” and even
+“AI” are used inconsistently and often misleadingly. There is currently no widely
+adopted, architecture-based taxonomy that classifies cognition systems by their
+internal mechanisms and safety profiles.
+
+The Cognition Scale addresses this gap by proposing a clear, structured,
+architecture-first classification system. It explicitly distinguishes between:
+
+- human cognition (LCM)
+- statistical cognition (LLM)
+- deterministic modular cognition (MCM)
+- reactive rule-based cognition (SCM)
+
+This framework helps prevent inappropriate comparisons between systems, reduces
+regulatory confusion, and enables more precise scientific discourse.
+
+---
+
+# 2. Motivation
+
+Three primary challenges motivate the creation of this taxonomy:
+
+### 2.1 Anthropomorphic Drift
+As LLMs increase in capability and fluency, observers may confuse linguistic
+competence with cognitive competence. A taxonomy helps re-anchor understanding of
+what these systems are—and are not.
+
+### 2.2 Safety and Governance Needs
+Regulators require clear categories for risk assessment. LLMs and MCMs have very
+different architectures and should not be governed under identical frameworks.
+
+### 2.3 Cognitive Science Integration
+Psychology, neuroscience, and computational cognitive science need a shared way
+to relate artificial systems to biological cognition without assuming equivalence.
+
+---
+
+# 3. The Cognition Scale: Overview
+
+The Cognition Scale consists of four tiers:
+
+1. **LCM — Large Cognition Model**  
+   *Human cognition.*
+
+2. **LLM — Large Language Model**  
+   *Statistical inference engines.*
+
+3. **MCM — Modest Cognition Model**  
+   *Deterministic modular artificial cognition.*
+
+4. **SCM — Simple Cognition Model**  
+   *Reactive symbolic logic.*
+
+This hierarchy is not based on capability or value; it is based on the
+**architecture of cognition**.
+
+---
+
+# 4. Tier Definitions
+
+## 4.1 Tier 1: LCM  
+### **Large Cognition Model**  
+**Primary example:** Humans
+
+Characteristics:
+- multimodal biological substrate  
+- emotion-modulated decision-making  
+- metacognition  
+- theory of mind  
+- open-ended learning  
+- agency, intentionality  
+- complex memory systems (episodic, semantic, procedural)  
+- embodiment and sensorimotor grounding  
+
+LCMs are the reference class for all cognition. They possess true generality.
+
+---
+
+## 4.2 Tier 2: LLM  
+### **Large Language Model**  
+**Examples:** GPT-5, Gemini, Claude, DeepSeek, Llama
+
+Characteristics:
+- stochastic prediction  
+- tensor-based inference  
+- hidden internal state  
+- emergent behavior without explicit structure  
+- ungrounded semantics  
+- potential for hallucination  
+- non-deterministic behavior  
+
+LLMs display *statistical cognition*, not deterministic reasoning. Their power
+comes from scale, not architecture. They can simulate cognition but do not
+perform internally interpretable reasoning.
+
+---
+
+## 4.3 Tier 3: MCM  
+### **Modest Cognition Model**  
+**Example:** Janet (Symbound Architecture)
+
+Characteristics:
+- deterministic reasoning path  
+- modular skills  
+- explicit, inspectable memory  
+- ambiguity rejection  
+- curriculum-based growth  
+- strict depth and recursion limits  
+- human-controlled development pipeline  
+
+MCMs are the first artificial cognition systems designed around *architectural
+humility*. They avoid the risks associated with LLMs by rejecting stochastic
+inference and emergent heuristics.
+
+---
+
+## 4.4 Tier 4: SCM  
+### **Simple Cognition Model**  
+**Examples:**  
+Decision trees, rule engines, finite-state machines, embedded controllers
+
+Characteristics:
+- reactive, predefined logic  
+- no learning capability  
+- no compositional reasoning  
+- local-only decision patterns  
+- fully deterministic  
+
+SCMs are not reasoning engines; they are deterministic stimulus-response systems.
+
+---
+
+# 5. Comparative Analysis
+
+## 5.1 Architectural Comparison Table
+
+| Feature | LCM | LLM | MCM | SCM |
+|--------|-----|-----|-----|-----|
+| Deterministic | ✖ | ✖ | ✔ | ✔ |
+| Stochastic | ✖ | ✔ | ✖ | ✖ |
+| Memory | Biological | Hidden | Explicit | None |
+| Learning | Lifelong | Pretrained | Curriculum | None |
+| Emotions | ✔ | Simulated | ✖ | ✖ |
+| Explainability | Medium | Low | High | High |
+| Safety Profile | Variable | Medium/High | Low | Low |
+| Agency | ✔ | ✖ | ✖ | ✖ |
+| Generality | Full | Partial | Local | None |
+| Persona | Inherent | Emergent | Forbidden | None |
+
+---
+
+# 6. Safety & Governance Implications
+
+### 6.1 LLM Safety Concerns
+LLMs resist deterministic safety guarantees due to:
+- emergent behaviors  
+- unpredictable sequence-to-sequence patterns  
+- hidden intermediate cognition  
+- difficulty constraining outputs  
+- hallucination  
+
+They require rigorous monitoring and human-in-the-loop governance.
+
+### 6.2 MCM Safety Advantages
+MCMs provide:
+- deterministic execution  
+- transparent reasoning chains  
+- human-controlled curriculum  
+- strict structural limits  
+- verifiable logic  
+- predictable failure modes  
+
+They are well-suited to regulated industries and local, safety-critical
+deployment.
+
+### 6.3 Regulatory Recommendation
+**LLMs should be classified as high-risk statistical cognition systems.**  
+**MCMs should be classified as bounded, low-risk deterministic cognition systems.**
+
+---
+
+# 7. Applications of Each Tier
+
+## LCM
+- ethics  
+- leadership  
+- innovation  
+- high-level judgment  
+
+## LLM
+- drafting  
+- reasoning simulation  
+- communication  
+- multimodal translation  
+
+## MCM
+- policy compliance  
+- financial reconciliation  
+- deterministic fact-checking  
+- health & safety auditing  
+- legal structure normalization  
+- local offline cognition tools  
+
+## SCM
+- automation  
+- embedded controls  
+- environmental monitoring  
+- industrial electronics  
+
+---
+
+# 8. Broader Impact
+
+The Cognition Scale provides:
+
+### 8.1 A shared intellectual foundation  
+For AI researchers, safety organizations, neuroscientists, psychologists,
+ethicists, and policymakers.
+
+### 8.2 An anti-anthropomorphic framework  
+It prevents the misinterpretation of LLM outputs as evidence of biological-like
+cognition.
+
+### 8.3 A roadmap for future artificial cognition  
+It suggests multiple non-LLM pathways:
+- modular systems  
+- hybrid architectures  
+- symbolic-deterministic cognition  
+- biologically inspired systems  
+
+### 8.4 A foundation for future cognitive science  
+It allows cognition to be studied across substrates without conflation.
+
+---
+
+# 9. Conclusion
+
+The Cognition Scale is a foundational framework for understanding and governing
+the diverse forms of cognition emerging in the 21st century. By focusing on
+architecture rather than hype, and by grounding terminology in safety,
+constraints, and interpretability, the scale provides the clarity needed for
+academic research, public communication, and policy regulation.
+
+MCMs, in particular, represent a new class of artificial cognition aimed not at
+mimicking humanity, but at creating safe, reliable, inspectable cognitive tools.
+
+This taxonomy is intended as a living document, evolving alongside the systems
+it describes.
+
+---
+
+# References (Suggested Format)
+
+- Anthony + Instance001. *The Cognition Scale v1.0*. Symbound Architecture, 2025.
+- Lake, Ullman, Tenenbaum, Gershman. *Building Machines that Learn and Think Like People*. Behavioral and Brain Sciences, 2017.
+- Marcus, G. *The Next Decade in AI: Four Steps Towards Robust Artificial Intelligence*. arXiv, 2020.
+- OpenAI, Anthropic, Google DeepMind. *Technical Interpretability Papers*.
+
+---
+
+# Appendix A: ASCII Diagram
+
+           ┌───────────────────────────┐
+           │     Tier 1: LCM           │
+           │     (Human Cognition)     │
+           └──────────────┬────────────┘
+                          │
+                          ▼
+           ┌───────────────────────────┐
+           │     Tier 2: LLM           │
+           │ (Statistical Cognition)   │
+           └──────────────┬────────────┘
+                          │
+                          ▼
+           ┌───────────────────────────┐
+           │     Tier 3: MCM           │
+           │ (Deterministic Cognition) │
+           └──────────────┬────────────┘
+                          │
+                          ▼
+           ┌───────────────────────────┐
+           │     Tier 4: SCM           │
+           │    (Reactive Logic)       │
+           └───────────────────────────┘
