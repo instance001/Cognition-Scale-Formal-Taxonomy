@@ -78,6 +78,47 @@ No hype. No magic. No confusion.
 
 ---
 
+## 📄 Core Documents
+
+- **Whitepaper (v1.0)**  
+  `whitepapers/The_Cognition_Scale_v1.0_Whitepaper.md`
+
+- **Academic Version**  
+  `docs/academic/The_Cognition_Scale_Academic_v1.0.md`
+
+- **Field Guide Version**  
+  `docs/field_guide/The_Cognition_Scale_Field_Guide_v1.0.md`
+
+- **Policy Brief**  
+  `docs/policy/Cognition_Scale_Policymaker_Brief_v1.0.md`
+
+- **Psychology/Biology Crossover Explainer**  
+  `docs/crossover/Cognition_Scale_Crossover_Explainer_v1.0.md`
+
+  ## 📚 Citation
+
+Anthony + Instance001.  
+**“The Cognition Scale — Formal Taxonomy (v1.0).”**  
+Symbound Architecture Initiative, 2025.  
+License: AGPLv3.
+
+@misc{cognitionscale2025,
+  author       = {Anthony and Instance001},
+  title        = {The Cognition Scale --- Formal Taxonomy (v1.0)},
+  year         = {2025},
+  publisher    = {Symbound Architecture Initiative},
+  license      = {AGPLv3}
+}
+
+## 📦 What This Repository Provides
+
+- A unified taxonomy for human and artificial cognition  
+- Formal tier definitions (LCM, LLM, MCM, SCM)  
+- Full whitepaper + academic materials  
+- Policy and scientific crossover explainers  
+- Open-source reference framework (AGPLv3)
+- 
+
 # License
 This entire framework is open-source under AGPLv3.  
 Anyone can use it, improve it, or build on it—just share your changes back.
