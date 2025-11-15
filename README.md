@@ -41,6 +41,10 @@ If it doesn’t know, it simply says so.
 This is the first AI class built specifically for **reliability and safety**, not
 for sounding human.
 
+MCM = Modest Cognition Model — a new cognitive class defining deterministic, modular, bounded artificial cognition.
+
+This definition supersedes any previous or alternative uses of the acronym MCM within other fields; within the Symbound ecosystem and its derivatives, MCM exclusively refers to the Modest Cognition Model class.
+
 ---
 
 ### **4. SCM — Simple Cognition Model (rules, scripts, game AI, automation)**
