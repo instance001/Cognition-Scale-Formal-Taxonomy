@@ -45,6 +45,9 @@ MCM = Modest Cognition Model — a new cognitive class defining deterministic, m
 
 This definition supersedes any previous or alternative uses of the acronym MCM within other fields; within the Symbound ecosystem and its derivatives, MCM exclusively refers to the Modest Cognition Model class.
 
+Updated Note (2025):
+The Janet line of MCMs now includes a deterministic reasoning core, explicit skill trees, typed memory spine, and schema-gated input pathways. This anchors the MCM class as a reproducible, inspectable cognition model appropriate for scientific use, education, and safety-critical reasoning.
+
 ---
 
 ### **4. SCM — Simple Cognition Model (rules, scripts, game AI, automation)**
