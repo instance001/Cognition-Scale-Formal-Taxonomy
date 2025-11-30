@@ -1,0 +1,272 @@
+Modest Cognition Model (MCM) — Compliance Checklist v1.0
+
+Status: Normative, required for all MCM classifications
+Author: Instance001 (Anthony)
+License: AGPL-v3
+Version: 2025-11-27 (baseline)
+
+This checklist defines the mandatory requirements a system must satisfy to qualify as a Modest Cognition Model (MCM) under the Cognition Scale Taxonomy.
+
+Failing ANY single category → automatic disqualification.
+This prevents misclassification and maintains strict, auditable boundaries between MCMs, LLMs, and agent shells.
+
+
+---
+
+✅ 1. Deterministic Core
+
+Required:
+
+No randomness
+
+No sampling
+
+No stochastic influence on decision paths
+
+Identical inputs ⇒ identical outputs
+
+LLMs must remain outside the core
+
+
+Fail conditions:
+
+Any use of temperature, top-p, or sampling
+
+“Deterministic mode” LLM calls inside the core logic
+
+Hidden stochastic heuristics
+
+
+
+---
+
+✅ 2. Explicit Memory
+
+Required:
+
+JSON/SQL/state-table storage
+
+No hidden or implicit memory
+
+All writes logged
+
+No silent data mutation
+
+Reversible, inspectable state
+
+
+Fail conditions:
+
+Vector DBs used as memory
+
+Learned embeddings as state
+
+Weight updates used as “memory”
+
+Any unlogged change
+
+
+
+---
+
+✅ 3. Human-Gated Skill Acquisition
+
+Required:
+
+Skills/tools defined via manifest
+
+Explicit permissioning
+
+No autonomous tool expansion
+
+No self-learning
+
+
+Fail conditions:
+
+Auto-installing new tools
+
+Model self-expansion
+
+Autonomous routing to new capabilities
+
+
+
+---
+
+✅ 4. Safety & Refusal Behavior
+
+Required:
+
+System can say: “I don’t know”
+
+Safe abstentions
+
+Hedging permitted
+
+No hallucinations
+
+No bluffing
+
+
+Fail conditions:
+
+Forced answer behavior
+
+Pattern-based hallucinations
+
+Overconfident wrong answers
+
+
+
+---
+
+✅ 5. Policy Enforcement
+
+Required:
+
+Policy graph / ruleset
+
+Every output passes enforcement
+
+Versioned policies
+
+No bypass paths
+
+
+Fail conditions:
+
+Tools or LLM calls bypass checks
+
+Policy stored in weights
+
+Unversioned rules
+
+
+
+---
+
+✅ 6. Explainability & Traceability
+
+Required:
+
+Deterministic explanations
+
+Visible decision chain
+
+Queryable logs
+
+No “black box” regions
+
+
+Fail conditions:
+
+Non-deterministic reasoning traces
+
+Opaque weight-space decisions
+
+Missing logs
+
+
+
+---
+
+✅ 7. Boundary Integrity
+
+Required:
+
+No anthropomorphism
+
+No persona drift
+
+No LLM-like creativity
+
+Deterministic tone stability
+
+
+Fail conditions:
+
+Suggesting emotions, wants, intent
+
+UX that implies self-identity
+
+Style drift
+
+
+
+---
+
+✅ 8. LLM Integration (If Applicable)
+
+Required:
+
+LLM = proposal generator ONLY
+
+MCM validates all outputs
+
+Logged calls
+
+Hard refusal if unsafe
+
+
+Fail conditions:
+
+LLM decision paths
+
+MCM deferring to LLM
+
+Unlogged LLM calls
+
+Tool routing via LLM
+
+
+
+---
+
+✅ 9. Curriculum Compliance (Janet-Specific)
+
+Required:
+
+Documented grade level
+
+Tests required for promotion
+
+No spontaneous generalization
+
+
+Fail conditions:
+
+Skipping grade gates
+
+Gaining new reasoning patterns without human approval
+
+Overgeneralization outside curriculum
+
+
+
+---
+
+✅ 10. Human Override
+
+Required:
+
+Hard stop
+
+Rollback
+
+Human-driven override
+
+Clear degradation detection
+
+
+Fail conditions:
+
+Runaway loops
+
+No emergency stop
+
+No rollback path
+
+
+
+---
