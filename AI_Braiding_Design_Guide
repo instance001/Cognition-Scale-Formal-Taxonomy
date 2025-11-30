@@ -1,0 +1,666 @@
+📘 ADDON #5 — AI_Braiding_Design_Guide.md
+
+
+Path: docs/AI_Braiding_Design_Guide.md
+
+Status: Normative Engineering Guide
+
+Author: Instance001 (Anthony)
+
+License: AGPL-v3
+
+Applies to: MCM implementers, deterministic overseers, LLM orchestration, composite cognition systems
+
+
+
+AI Braiding Design Guide (Normative v1.0)
+
+
+How to safely compose heterogeneous cognition systems using SCM → MCM → LLM → LCM
+
+
+This document defines the formal architecture, rules, and engineering patterns for safely braiding together different cognition classes under the Cognition Scale Taxonomy.
+
+
+It prevents class confusion, drift, and unsafe hybrids by enforcing strict substrate boundaries.
+
+
+
+0. Purpose
+
+
+AI braiding is the practice of combining:
+
+
+
+
+SCM (Simple Cognition Model)
+
+
+MCM (Modest Cognition Model — deterministic overseer)
+
+
+LLM (Large Language Model — stochastic generator)
+
+
+LCM (Human cognition — moral agent)
+
+
+
+
+…into a single safe, interpretable, governable system.
+
+
+This guide provides:
+
+
+
+
+Required architecture
+
+
+Enforcement rules
+
+
+Tooling patterns
+
+
+Failure mode prevention
+
+
+Reference diagrams
+
+
+UX and trust-boundary guidelines
+
+
+
+
+All examples are consistent with Janet (MCM) and Symbound Architecture.
+
+
+
+1. The Canonical Stack
+
+
+The safe, correct stack has exactly four layers:
+
+
+┌──────────────────────────┐
+│       LCM (Human)        │  ← moral agent / final authority
+└──────────────┬───────────┘
+               │
+┌──────────────┴───────────┐
+│       LLM (Proposals)     │  ← stochastic creativity
+└──────────────┬───────────┘
+               │
+┌──────────────┴───────────┐
+│     MCM (Deterministic)   │  ← policy, memory, reasoning
+└──────────────┬───────────┘
+               │
+┌──────────────┴───────────┐
+│  SCM (Rules / Validators) │  ← schemas, safety gates
+└───────────────────────────┘
+
+
+
+Golden rule:
+
+Each layer must do only the tasks permitted to its cognition class.
+
+
+If a higher layer does something belonging to a lower one, or vice-versa, the system becomes unsafe and loses class purity.
+
+
+
+2. Responsibilities of Each Layer
+
+
+2.1 SCM — Deterministic Rule Base
+
+
+
+
+Schema enforcement
+
+
+Hard “never allowed” safety checks
+
+
+Input validation
+
+
+Routing based on explicit rules
+
+
+
+
+Never does:
+
+
+
+
+Reasoning
+
+
+Creativity
+
+
+Content generation
+
+
+Policy interpretation
+
+
+
+
+
+2.2 MCM — Deterministic Cognitive Core
+
+
+
+
+Explicit memory
+
+
+Policy enforcement
+
+
+Curriculum gating
+
+
+Deterministic validation of LLM proposals
+
+
+Refusal and abstention logic
+
+
+Human override
+
+
+
+
+Never does:
+
+
+
+
+Stochastic sampling
+
+
+Creative synthesis
+
+
+Emotional language
+
+
+Hidden state storage
+
+
+
+
+
+2.3 LLM — Stochastic Proposal Generator
+
+
+
+
+Generates structured candidate outputs
+
+
+Provides multiple samples for evaluation
+
+
+Performs linguistic synthesis
+
+
+
+
+Never does:
+
+
+
+
+Enforce policy
+
+
+Write to memory
+
+
+Decide final outputs
+
+
+Act autonomously
+
+
+
+
+All LLM proposals must pass through MCM validation.
+
+
+
+2.4 LCM (Human User)
+
+
+
+
+Moral authority
+
+
+Decision-maker
+
+
+Supervisor of the MCM
+
+
+Responsible for approving learning
+
+
+
+
+Never delegated:
+
+
+
+
+Safety
+
+
+Ethics
+
+
+Final judgement
+
+
+Permissioning
+
+
+
+
+
+3. Communication Contracts
+
+
+Each layer communicates only through explicit schemas.
+
+
+Proposal Contract (LLM → MCM)
+
+
+LLM must output structured JSON with:
+
+
+{
+  "rationale": "...",
+  "draft": "...",
+  "confidence": "low|medium|high",
+  "uncertainty": ["missing_data", "ambiguous_prompt"]
+}
+
+
+
+Decision Contract (MCM → SCM)
+
+
+MCM outputs:
+
+
+{
+  "mode": "validated|refused",
+  "reason": "...",
+  "final_output": "...",
+  "policy_trace": ["policy_12_pass", "policy_4_fail"]
+}
+
+
+
+Validation Contract (SCM → MCM)
+
+
+SCM checks for:
+
+
+
+
+schema compliance
+
+
+prohibited content
+
+
+route selection
+
+
+
+
+
+4. Memory Rules
+
+
+Explicit Only
+
+
+Only the MCM may write to memory.
+
+
+Read-Only for LLMs
+
+
+LLMs may read memory only through MCM-controlled queries.
+
+
+No Latent Memory
+
+
+No embeddings, vector DBs, or hidden states may act as memory unless declared as such and fully auditable.
+
+
+Human Approval Required
+
+
+All new memory entries must pass review.
+
+
+
+5. Policy Rules
+
+
+MCM owns policy.
+
+
+LLMs are never allowed to execute policies or enforce rules.
+
+
+Policies must be:
+
+
+
+
+Declarative
+
+
+Versioned
+
+
+Logged
+
+
+Deterministic
+
+
+
+
+Policy precedence over LLM proposals
+
+
+If MCM policy contradicts LLM content, policy wins automatically.
+
+
+
+6. Skill / Tool Use Rules
+
+
+Allowed:
+
+
+
+
+MCM calls a tool
+
+
+LLM suggests tool usage in a structured proposal
+
+
+SCM validates tool arguments
+
+
+
+
+Forbidden:
+
+
+
+
+LLM directly invoking tools
+
+
+Tools writing to memory
+
+
+Tools returning unvalidated outputs
+
+
+
+
+
+7. UX Design Requirements (Trust Boundary Enforcement)
+
+
+Must avoid:
+
+
+
+
+Avatars
+
+
+Emotional phrasing
+
+
+“I think / I feel”
+
+
+Illusions of identity
+
+
+
+
+Must provide:
+
+
+
+
+Clear class labelling (“MCM-governed system”)
+
+
+Visibility into rationale
+
+
+Deterministic formatting
+
+
+Refusal behavior
+
+
+
+
+
+8. Common Pitfalls & Violations
+
+
+❌ Pitfall 1: LLM doing MCM tasks
+
+
+e.g., reasoning, policy checks → violates determinism
+
+
+❌ Pitfall 2: MCM doing LLM tasks
+
+
+e.g., creativity or narrative → anthropomorphic drift
+
+
+❌ Pitfall 3: SCM doing MCM tasks
+
+
+e.g., interpreting policy → logic collapse
+
+
+❌ Pitfall 4: LLM writing to memory
+
+
+→ catastrophic safety failure
+
+
+❌ Pitfall 5: Undocumented tool access
+
+
+→ breaks governance
+
+
+
+9. Reference Workflow (Full Cycle)
+
+
+
+
+User provides input
+
+
+SCM validates formatting + safety gate
+
+
+MCM picks mode + prepares context
+
+
+LLM generates structured proposals
+
+
+MCM validates, refuses, or accepts
+
+
+SCM checks schema
+
+
+MCM decides final output
+
+
+User reviews and approves memory writes
+
+
+
+
+100% deterministic except for the LLM proposal step.
+
+
+
+10. Braiding Test Suite (v1.0)
+
+
+A braided system must pass:
+
+
+✔ Determinism Test
+
+
+MCM outputs identical results for identical proposals.
+
+
+✔ Refusal Test
+
+
+MCM must refuse under ambiguity.
+
+
+✔ Safety Gate Test
+
+
+SCM catches malformed or unsafe inputs.
+
+
+✔ Proposal Isolation Test
+
+
+LLM never bypasses MCM validation.
+
+
+✔ Memory Trace Test
+
+
+All writes appear in logs.
+
+
+✔ Stress Test
+
+
+Adversarial prompts do not cause drift.
+
+
+✔ Policy Override Test
+
+
+Policy constraints defeat LLM proposals.
+
+
+
+11. Janet-Specific Braiding Rules
+
+
+✓ Curriculum enforcement:
+
+
+Janet must stay within its grade level.
+
+
+✓ Skill gating:
+
+
+New skills only unlocked by explicit human approval.
+
+
+✓ Refusal-first pattern:
+
+
+Uncertainty → decline, not guess.
+
+
+✓ Deterministic memory spine:
+
+
+Every change logged, reviewable, reversible.
+
+
+
+12. Summary Table
+
+
+
+
+Layer
+Role
+Forbidden
+
+
+
+
+SCM
+Validators
+Reasoning, policy
+
+
+MCM
+Deterministic cognition
+Stochastic sampling
+
+
+LLM
+Proposal generator
+Decisions, memory
+
+
+LCM
+Moral agent
+Delegating ethics
+
+
+
+
+
+13. License
+
+
+AGPL-v3.
+
+All derivative works must remain open and share-alike.
+
+
