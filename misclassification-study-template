@@ -1,0 +1,110 @@
+# Misclassification Case Study — TEMPLATE
+Version: 1.0  
+Status: Template (for reuse)  
+Applies to: Cognition Scale Taxonomy (LCM / LLM / MCM / SCM)
+
+---
+
+## 1. Case Summary (1–3 sentences)
+A concise explanation of the misclassification incident.
+
+**Example format:**
+A major tech provider marketed an LLM-powered tool as “agentic AI.”  
+The system’s architecture reveals no autonomous cognition or deterministic agency.
+
+---
+
+## 2. Source (public-facing)
+Provide a screenshot, link, or citation:
+
+- Platform:
+- Publisher:
+- Date observed:
+- Asset(s):
+
+*(Images may be stored in `case_studies/assets/` with filename referenced here.)*
+
+---
+
+## 3. Claim Made by the Source
+Quote or restate the public claim exactly as presented.
+
+**Example:**
+> “Master Agentic AI with expert training from [Company].”
+
+---
+
+## 4. Taxonomy Classification (Correct)
+Identify the *actual* cognition class based on the Cognition Scale.
+
+- **Correct Class:** LLM / SCM / MCM / LCM  
+- **Reason:** (1–2 sentences)
+
+---
+
+## 5. Misclassification Type  
+Choose one or more:
+
+- **Upward Anthropomorphic Drift** (LLM → implied proto-agency/persona)  
+- **Capability Inflation**  
+- **Taxonomy Boundary Confusion**  
+- **Marketing-Induced Class Shift**  
+- **Agent-Frame Misuse**  
+- **Ambiguous Terminology**  
+- **Composite Architecture Mislabeling**  
+
+---
+
+## 6. Architecture Inspection
+Describe the system’s likely or published architecture and where the misclassification arises.
+
+**Checklist:**
+
+- [ ] Stochastic LLM core  
+- [ ] No deterministic overseer (MCM)  
+- [ ] No explicit memory  
+- [ ] No skill gating  
+- [ ] No policy engine  
+- [ ] No refusal behavior  
+- [ ] No audit chain  
+- [ ] Marketing suggests agency without architectural basis  
+
+---
+
+## 7. Impact Assessment  
+What confusion or harm can arise from this misclassification?
+
+- Public misunderstanding  
+- Policy misalignment  
+- Overstated capabilities  
+- Expectation mismatch  
+- Unsafe deployment framing  
+- Researchers adopting incorrect vocabulary  
+
+---
+
+## 8. Corrective Framing  
+Provide the proper, taxonomy-aligned description.
+
+**Example:**
+“This is an LLM-based tool augmented with retrieval, not an agentic cognition system.”
+
+---
+
+## 9. Alignment to Cognition Scale  
+How this case reinforces taxonomy boundaries.
+
+- Shows necessity of strict class definitions  
+- Demonstrates real-world confusion  
+- Highlights gap between marketing vs architecture  
+- Validates need for deterministic MCM layer  
+
+---
+
+## 10. Notes for Future Reviewers  
+Space for comments, expansions, or follow-up action.
+
+---
+
+**Template License:** AGPLv3  
+**Maintainers:** Instance001 + Anthony
