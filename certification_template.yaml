@@ -1,0 +1,15 @@
+system: Janet Core v0.3
+class: MCM
+version: 0.3
+date: 2025-11-27
+
+deterministic_core: true
+explicit_memory: true
+human_gated_skills: true
+safety_refusal: true
+policy_enforced: true
+explainable: true
+boundary_integrity: true
+llm_integration_governed: true
+curriculum_documented: true
+human_override: true
