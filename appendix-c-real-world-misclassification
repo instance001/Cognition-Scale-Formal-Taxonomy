@@ -1,0 +1,222 @@
+📎 Appendix C — Real-World Misclassification Case Study (Industry “Agentic AI”)
+
+Version: 2025-12-01
+Repository: Cognition Scale Taxonomy (v0.3 → v0.4 bridge)
+Purpose: Demonstrate category drift and misclassification in current AI industry marketing
+
+
+---
+
+C.1 Overview
+
+Modern AI marketing frequently presents large language models (LLMs) as “agents,” implying autonomy, goal-directed behavior, or cognitive capability beyond what LLMs can reliably provide.
+
+This appendix documents a real, widely distributed example of such misclassification and contrasts it with correct taxonomy usage.
+
+
+---
+
+C.2 Example: Coursera/IBM Advertisement (2025)
+
+A publicly circulated Coursera + IBM advertisement for an “Agentic AI Professional Certificate” (2025) claims:
+
+> “Use AI tools to streamline automation with the IBM RAG and Agentic AI Professional Certificate.
+Build in-demand skills in generative AI, agentic systems, and more.”
+
+
+
+This ad uses “agentic AI” to refer to:
+
+LLMs with RAG wrappers
+
+LLMs orchestrating tool-use flows
+
+Vector database retrieval
+
+Classical automation packaged as “agents”
+
+
+No deterministic reasoning layer is included. No explicit memory. No safety guarantees. No policy enforcement.
+
+This is not agentic cognition under this taxonomy.
+
+
+---
+
+C.3 Classification Under the Cognition Scale
+
+The system advertised is classified as:
+
+LLM: stochastic, token-predictive substrate
+
++ SCM components: scripted tool calls and RAG pipelines
+
+Faux-MCM: misrepresented as an agentic or cognitive decision layer
+
+
+This system does not qualify as an MCM under any condition because it lacks:
+
+1. Determinism
+
+
+2. Traceability
+
+
+3. Explicit memory
+
+
+4. Curriculum gating
+
+
+5. Refusal behavior
+
+
+6. Stable identity
+
+
+7. Safety spine
+
+
+8. Transparent state
+
+
+9. Policy-controlled tool access
+
+
+10. Human override and rollback
+
+
+
+Failing any one of these disqualifies it from MCM classification.
+It fails all ten.
+
+
+---
+
+C.4 Why This Misclassification Is Dangerous
+
+Mislabeling LLM tool pipelines as “agents” causes:
+
+1. Upward Anthropomorphic Drift
+
+LLMs are framed as autonomous decision-makers instead of stochastic text engines.
+
+2. Policy Confusion
+
+Regulators are misled about system capability, risk, and oversight requirements.
+
+3. Public Misunderstanding
+
+Non-experts assume independence, goals, or intent where none exists.
+
+4. Engineering Misdesign
+
+Developers build systems on false assumptions (e.g., “the agent will reason about errors”).
+
+5. Safety Failure Vectors
+
+Faux-MCMs bypass guardrails through hidden RAG state, unlogged reasoning, and unpredictable tool calls.
+
+
+---
+
+C.5 Correct Classification (What Agentic AI Actually Means)
+
+Under the Cognition Scale:
+
+Agentic cognition requires:
+
+Deterministic reasoning
+
+Transparent, queryable state
+
+Explicit memory
+
+Skill manifests with hard gating
+
+Policy enforcement layers
+
+Refusal/caution behavior
+
+Clear substrate boundaries
+
+Human override
+
+No hallucinations
+
+No persona drift
+
+Traceable chain-of-thought (non-internal, non-sensitive)
+
+
+This is the Modest Cognition Model (MCM) class.
+
+LLMs can participate in agentic architectures only as:
+
+proposal generators
+
+suggestion engines
+
+idea expanders
+
+
+never as the governing layer.
+
+
+---
+
+C.6 Why This Case Study Is Included
+
+To give researchers, policymakers, educators, and the public a concrete example of:
+
+Industry terminology drift
+
+Faux-agency framing
+
+Boundary erosion
+
+How real-world systems differ from MCM definitions
+
+
+This taxonomy is intentionally conservative to prevent exactly this kind of conflation.
+
+
+---
+
+C.7 Summary Table
+
+Attribute	IBM/Coursera “Agentic AI”	Cognition Scale Agentic (MCM)
+
+Substrate	LLM + RAG	Deterministic reasoning core
+Memory	Implicit embeddings	Explicit tables / logs
+Determinism	No	Yes
+Hallucination Risk	High	None
+Policy Enforcement	Minimal	Mandatory
+Tool Use	LLM-driven	MCM-validated
+Refusal Behavior	Weak	Strong
+UX Framing	Anthropomorphic	Non-anthropomorphic
+Correct Classification	LLM/SCM Hybrid	MCM
+
+
+
+---
+
+C.8 Conclusion
+
+This advertisement exemplifies the industry’s recurring error:
+equating stochastic LLM behavior with agentic cognition.
+
+The Cognition Scale prevents this confusion by:
+
+enforcing strict class boundaries
+
+banning upward anthropomorphic drift
+
+defining MCMs as deterministic, bounded, safe cognitive engines
+
+reserving LLMs for stochastic proposal generation
+
+
+This case study should serve as a reference point for future audits, grants, and public communication.
+
+
