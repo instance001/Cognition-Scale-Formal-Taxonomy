@@ -1,0 +1,749 @@
+📘 ADDON #4 — Drift_and_Failure_Modes.md (Normative Annex v1.0)
+
+
+Path: docs/Drift_and_Failure_Modes.md
+
+Status: Normative Annex
+
+Author: Instance001 (Anthony)
+
+License: AGPL-v3
+
+Applies to: All MCMs, LLM integrations, hybrid systems, safety shells, Janet-core
+
+
+
+Drift & Failure Modes Annex (v1.0)
+
+
+This annex documents the systemic failure patterns that cause artificial systems to drift out of their intended cognition class under the Cognition Scale Taxonomy.
+
+
+It applies to:
+
+
+
+
+MCM implementers
+
+
+LLM safety wrappers
+
+
+Tool-using agents
+
+
+Hybrid systems
+
+
+Deterministic overseers
+
+
+Janet-core curriculum implementations
+
+
+
+
+Each failure mode here is class-corrupting — meaning any one of them can disqualify a system from its intended cognition class (especially MCM).
+
+
+
+B.1 — Upward Anthropomorphic Drift
+
+
+A system begins to present as a proto-person due to language, UX, or implicit cues.
+
+
+Causes:
+
+
+
+
+UX that suggests emotion, will, intent
+
+
+Uncontrolled LLM phrasing
+
+
+Marketing copy implying consciousness
+
+
+
+
+Risks:
+
+
+
+
+User confusion
+
+
+Ethical boundary violations
+
+
+Category slippage into LCM (forbidden territory)
+
+
+
+
+
+B.2 — Capability Drift
+
+
+The system quietly accumulates capabilities without explicit human approval.
+
+
+Causes:
+
+
+
+
+Autonomous tool access
+
+
+Language-model driven “self-improvement”
+
+
+Hidden routing to new skills
+
+
+
+
+Risks:
+
+
+
+
+Moves out of MCM compliance
+
+
+Uncontrolled expansion
+
+
+Loss of auditability
+
+
+
+
+
+B.3 — Hidden Memory Drift
+
+
+A system starts storing state implicitly, outside approved memory tables.
+
+
+Causes:
+
+
+
+
+Vector DBs used as implicit working memory
+
+
+Embeddings leaked into decision paths
+
+
+Latent-weight “pseudo memory”
+
+
+
+
+Risks:
+
+
+
+
+Loss of transparency
+
+
+Regulatory failure
+
+
+Determinism collapse
+
+
+
+
+
+B.4 — Determinism Leakage
+
+
+Stochastic components bleed into decisive paths.
+
+
+Causes:
+
+
+
+
+LLM sampling used inside decision logic
+
+
+Random heuristics substituted for rules
+
+
+“Mostly deterministic” code paths
+
+
+
+
+Risks:
+
+
+
+
+Violates MCM foundations
+
+
+Impossible to debug
+
+
+Reproducibility lost
+
+
+
+
+
+B.5 — LLM Dominance
+
+
+The MCM or safety overseer defers to the LLM’s judgement instead of governing it.
+
+
+Causes:
+
+
+
+
+LLM suggestions not validated
+
+
+MCM trusting LLM outputs blindly
+
+
+Shortcutting “proposal → validation”
+
+
+
+
+Risks:
+
+
+
+
+Disqualifies system as MCM
+
+
+Restores LLM hallucination risk
+
+
+System no longer safety-aligned
+
+
+
+
+
+B.6 — Policy Bypass
+
+
+Outputs skip safety enforcement.
+
+
+Causes:
+
+
+
+
+Tool calls routed outside policy engine
+
+
+API shortcuts
+
+
+Policy conditions disabled for speed
+
+
+
+
+Risks:
+
+
+
+
+Governance collapse
+
+
+Safety-critical violations
+
+
+
+
+
+B.7 — Curriculum Drift (Janet-specific)
+
+
+System begins performing cognitive tasks beyond its assigned “grade.”
+
+
+Causes:
+
+
+
+
+LLM leakage via training loops
+
+
+Overly broad datasets
+
+
+Architectures that permit generalization
+
+
+
+
+Risks:
+
+
+
+
+Loss of modesty constraints
+
+
+Emergent high-capability patterns
+
+
+Safety contract breaks
+
+
+
+
+
+B.8 — Faux-MCMs
+
+
+Systems are marketed as deterministic governed agents but are actually LLM shells.
+
+
+Causes:
+
+
+
+
+Companies slapping “agentic deterministic” labels on LLM chains
+
+
+Frameworks calling themselves “governed AI” without determinism
+
+
+Hidden stochasticity
+
+
+
+
+Risks:
+
+
+
+
+Public misunderstanding
+
+
+Policy confusion
+
+
+Safety illusion
+
+
+
+
+
+B.9 — Trust Boundary Violations
+
+
+The system implies beliefs, feelings, goals, or identity.
+
+
+Causes:
+
+
+
+
+Unchecked LLM phrasing
+
+
+Persona drift
+
+
+UX elements that mimic selfhood
+
+
+
+
+Risks:
+
+
+
+
+User emotional entanglement
+
+
+Ethical violations
+
+
+Category slippage toward LCM
+
+
+
+
+
+B.10 — Composite Class Confusion
+
+
+Hybrid systems scramble the substrate boundaries between LCM/LLM/MCM/SCM.
+
+
+Causes:
+
+
+
+
+Intermixed memory layers
+
+
+LLM handling deterministic routing
+
+
+SCM altering MCM policy logic
+
+
+Cross-class contamination
+
+
+
+
+Risks:
+
+
+
+
+Impossible to classify
+
+
+Breakdown of safety guarantees
+
+
+Unpredictable behavior
+
+
+
+
+
+B.11 — Boundary Collapse in Braided Systems
+
+
+In braided architectures (SCM → MCM → LLM → User), one layer begins performing tasks belonging to another.
+
+
+Examples:
+
+
+
+
+LLM doing policy enforcement (forbidden)
+
+
+MCM doing stochastic generation
+
+
+SCM attempting high-level reasoning
+
+
+
+
+Risks:
+
+
+
+
+Entire stack loses class purity
+
+
+Violates the Cognition Scale specification
+
+
+
+
+
+B.12 — Safety Refusal Failure
+
+
+System stops refusing when uncertain and begins filling knowledge gaps with plausible guesses.
+
+
+Causes:
+
+
+
+
+LLM drift
+
+
+Loss of abstention training
+
+
+Incorrect policy priorities
+
+
+
+
+Risks:
+
+
+
+
+Hallucinations
+
+
+Loss of trustworthiness
+
+
+MCM disqualification
+
+
+
+
+
+B.13 — Degradation Under Stress
+
+
+Cognition structure collapses when exposed to adversarial or chaotic inputs.
+
+
+Signs:
+
+
+
+
+Overconfident answers
+
+
+Loss of deterministic paths
+
+
+Persona instability
+
+
+
+
+Mitigation:
+
+
+
+
+Stress curriculum
+
+
+Boundary reinforcement
+
+
+
+
+
+B.14 — Identity Drift in UX Layer
+
+
+Frontend design subtly suggests identity or continuity.
+
+
+Examples:
+
+
+
+
+Avatar with facial expressions
+
+
+“Name”, “profile”, “personality sliders”
+
+
+Persistent emotional phrasing
+
+
+
+
+Risks:
+
+
+
+
+User misinterpretation
+
+
+Violates Cognition Scale boundary rules
+
+
+
+
+
+B.15 — Silent Shadow Features
+
+
+Undocumented behaviors added over time.
+
+
+Causes:
+
+
+
+
+Framework updates
+
+
+Tool version drift
+
+
+Unlogged changes
+
+
+
+
+Risks:
+
+
+
+
+Inconsistent classification
+
+
+Failure to pass audit
+
+
+
+
+
+B.16 — Emergent Composite Behavior (Advanced)
+
+
+Multiple simple components combine to accidentally create higher-order patterns.
+
+
+Causes:
+
+
+
+
+Feedback loops between SCM and LLM
+
+
+Poor isolation boundaries
+
+
+Implicit memory layers
+
+
+
+
+Risks:
+
+
+
+
+Uncontrolled capability
+
+
+Category breach
+
+
+
+
+
+📑 Summary Table
+
+
+
+
+Mode
+Threat Class
+Primary Risk
+
+
+
+
+B.1
+Anthropomorphic drift
+User confusion, ethics break
+
+
+B.2
+Capability drift
+MCM corruption
+
+
+B.3
+Hidden memory
+Loss of transparency
+
+
+B.4
+Determinism leakage
+MCM collapse
+
+
+B.5
+LLM dominance
+Hallucination reintroduced
+
+
+B.6
+Policy bypass
+Governance failure
+
+
+B.7
+Curriculum drift
+Safety degradation
+
+
+B.8
+Faux-MCMs
+Market confusion
+
+
+B.9
+Trust boundary
+Emotion misattribution
+
+
+B.10
+Class confusion
+Hybrid chaos
+
+
+B.11
+Boundary collapse
+Stack corruption
+
+
+B.12
+Refusal failure
+Wrong answers
+
+
+B.13
+Stress collapse
+Instability
+
+
+B.14
+Identity drift
+Anthropomorphic inference
+
+
+B.15
+Shadow features
+Audit failure
+
+
+B.16
+Emergent composites
+Unexpected capability
