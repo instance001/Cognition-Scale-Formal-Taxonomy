@@ -1,0 +1,17 @@
+{
+  "name": "Generic Enterprise RAG LLM Service",
+  "class": "LLM",
+  "version": "1.0",
+  "substrate": "neural_weights",
+  "determinism": "stochastic",
+  "learning_mode": "offline_pretrain",
+  "memory_mode": "implicit_weights",
+  "safety_profile": {
+    "refusal_behavior": "partial",
+    "policy_enforcement": "external_wrapper",
+    "auditability": "partial"
+  },
+  "human_role": "operator",
+  "description": "A cloud-hosted LLM used via API with retrieval-augmented context injection.",
+  "notes": "Service is sometimes marketed as 'agentic AI' but does not meet MCM requirements. This descriptor explicitly classifies it as LLM."
+}

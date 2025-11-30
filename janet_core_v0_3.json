@@ -1,0 +1,29 @@
+{
+  "name": "Janet Core v0.3",
+  "class": "MCM",
+  "version": "0.3",
+  "substrate": "code+structured_memory",
+  "determinism": "deterministic",
+  "learning_mode": "human_gated_skills",
+  "memory_mode": "explicit_structured",
+  "safety_profile": {
+    "refusal_behavior": "strong",
+    "policy_enforcement": "built_in",
+    "auditability": "full"
+  },
+  "human_role": "governor",
+  "description": "Reference Modest Cognition Model core: deterministic selectors, explicit memory, curriculum-based skill acquisition, and strong refusal behavior.",
+  "notes": "No stochastic sampling in the core. Any LLM integration must remain outside this descriptor.",
+  "mcm_compliance": {
+    "deterministic_core": true,
+    "explicit_memory": true,
+    "human_gated_skills": true,
+    "safety_refusal": true,
+    "policy_enforced": true,
+    "explainable": true,
+    "boundary_integrity": true,
+    "llm_integration_governed": true,
+    "curriculum_documented": true,
+    "human_override": true
+  }
+}

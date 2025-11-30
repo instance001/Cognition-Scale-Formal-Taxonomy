@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://instance001.org/schemas/cognition_class.schema.json",
+  "title": "Cognition Class Descriptor",
+  "description": "Normalized descriptor for systems classified under the Cognition Scale (LCM / LLM / MCM / SCM).",
+  "type": "object",
+  "required": [
+    "name",
+    "class",
+    "version",
+    "substrate",
+    "determinism",
+    "learning_mode",
+    "memory_mode",
+    "safety_profile",
+    "human_role"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Human-readable system name, e.g., 'Janet Core v0.3' or 'Symbound Embryo POC'."
+    },
+    "class": {
+      "type": "string",
+      "enum": ["LCM", "LLM", "MCM", "SCM"],
+      "description": "Cognition Scale class."
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic or project version identifier."
+    },
+    "substrate": {
+      "type": "string",
+      "description": "Primary implementation substrate, e.g., 'biological', 'neural_weights', 'code+structured_memory', 'rules/FSM'."
+    },
+    "determinism": {
+      "type": "string",
+      "enum": ["deterministic", "stochastic", "mixed", "not_applicable"],
+      "description": "Whether core decision paths are deterministic."
+    },
+    "learning_mode": {
+      "type": "string",
+      "enum": ["lifelong", "offline_pretrain", "human_gated_skills", "none"],
+      "description": "How the system acquires new capabilities."
+    },
+    "memory_mode": {
+      "type": "string",
+      "enum": ["implicit_weights", "explicit_structured", "none", "external_only"],
+      "description": "How memory is stored and accessed."
+    },
+    "safety_profile": {
+      "type": "object",
+      "required": ["refusal_behavior", "policy_enforcement", "auditability"],
+      "properties": {
+        "refusal_behavior": {
+          "type": "string",
+          "enum": ["none", "partial", "strong"],
+          "description": "Whether the system can abstain / hedge safely."
+        },
+        "policy_enforcement": {
+          "type": "string",
+          "enum": ["none", "external_wrapper", "built_in"],
+          "description": "Where policy constraints live relative to the system."
+        },
+        "auditability": {
+          "type": "string",
+          "enum": ["opaque", "partial", "full"],
+          "description": "Can a human reconstruct the decision path?"
+        }
+      }
+    },
+    "human_role": {
+      "type": "string",
+      "enum": [
+        "moral_agent",
+        "governor",
+        "supervisor",
+        "operator",
+        "author_only"
+      ],
+      "description": "Primary human role relative to the system."
+    },
+    "description": {
+      "type": "string",
+      "description": "Short natural-language description of what the system does."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Any additional clarifications relevant to boundary or classification."
+    },
+    "mcm_compliance": {
+      "type": "object",
+      "description": "If class === 'MCM', optional checklist aligned with the MCM Compliance spec.",
+      "properties": {
+        "deterministic_core": { "type": "boolean" },
+        "explicit_memory": { "type": "boolean" },
+        "human_gated_skills": { "type": "boolean" },
+        "safety_refusal": { "type": "boolean" },
+        "policy_enforced": { "type": "boolean" },
+        "explainable": { "type": "boolean" },
+        "boundary_integrity": { "type": "boolean" },
+        "llm_integration_governed": { "type": "boolean" },
+        "curriculum_documented": { "type": "boolean" },
+        "human_override": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
