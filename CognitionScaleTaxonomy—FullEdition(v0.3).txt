@@ -260,6 +260,13 @@ Stochastic decision-making
 
 This is the class Janet belongs to.
 
+Implementation Note (2025 Update):
+The MCM class is architecture-agnostic but compatible with multi-organ cognitive designs such as Janet-Core v0.3, which uses modular reasoning organs (Input Normaliser, Mode Selector, Skill Organ, Memory Organ, Policy Organ, Validator Organ, and Curriculum Organ).
+
+These organs do not expand the MCM class — they are simply one compliant implementation pattern.
+
+Any system that satisfies the MCM compliance checklist (determinism, explicit memory, bounded skills, transparent state, policy enforcement, refusal behavior, etc.) qualifies as an MCM, regardless of its internal organ layout.
+
 
 ---
 
