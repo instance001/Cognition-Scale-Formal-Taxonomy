@@ -8,6 +8,8 @@ on the inside.
 This makes it easy for anyone—engineers, policymakers, psychologists, or
 curious people—to talk about different intelligence systems without confusion.
 
+Philpapers mirror: https://philpapers.org/rec/PATCST-4
+
 ---
 
 # The Four Kinds of Minds
