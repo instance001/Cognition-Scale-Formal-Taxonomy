@@ -17,7 +17,7 @@ Philpapers mirror: https://philpapers.org/rec/PATCST-4
 Humans are the most complex minds we know.
 We learn from life, feel emotions, make judgement calls, and think in flexible,
 creative ways. Humans are the reference class for biological cognition in this
-taxonomy.
+taxonomy: the gold standard against which the other classes are compared.
 
 ---
 

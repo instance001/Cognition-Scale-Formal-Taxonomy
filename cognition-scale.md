@@ -37,7 +37,7 @@ Properties:
 - embodied perception and survival instincts
 - highest known form of open-ended generality
 
-LCMs are the biological reference class.  
+LCMs set the gold standard.  
 Every other cognition system is defined *relative to* LCM.
 
 ---
