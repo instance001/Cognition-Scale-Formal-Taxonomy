@@ -115,7 +115,7 @@ You can compare:
 
 …using one taxonomy.
 
-### 2. It contextualizes artificial minds without anthropomorphism.
+### 2. It contextualizes artificial cognition systems without anthropomorphism.
 You don’t need to treat LLMs as “proto-minds” or “emotional mimicry engines.”  
 You can classify them as **statistical cognition systems** — an entirely new category.
 
@@ -144,7 +144,7 @@ It supports a **pluralistic, multi-substrate view of cognition**, where:
 - deterministic artificial cognition  
 - reactive logic  
 
-…are recognized as different *species* of mind-like systems.
+…are recognized as different classes of mind-like or cognition-like systems.
 
 ---
 

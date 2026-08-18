@@ -1,9 +1,8 @@
 # The Cognition Scale (Plain English Overview)
 
-The Cognition Scale is a simple way to understand **all kinds of minds**, whether
-they are human or artificial. Instead of arguing about “AI vs humans,” it sorts
-every thinking system into **four clear types**, based on how they actually work
-on the inside.
+The Cognition Scale is a simple way to compare **human and artificial cognition
+systems**. Instead of arguing about “AI vs humans,” it sorts systems into **four
+clear types**, based on architecture, constraints, and observable behaviour.
 
 This makes it easy for anyone—engineers, policymakers, psychologists, or
 curious people—to talk about different intelligence systems without confusion.
@@ -12,12 +11,13 @@ Philpapers mirror: https://philpapers.org/rec/PATCST-4
 
 ---
 
-# The Four Kinds of Minds
+# The Four Cognition Classes
 
 ### **1. LCM — Large Cognition Model (Humans)**
 Humans are the most complex minds we know.
 We learn from life, feel emotions, make judgement calls, and think in flexible,
-creative ways. Humans are the “gold standard” for what a real mind is.
+creative ways. Humans are the reference class for biological cognition in this
+taxonomy.
 
 ---
 
@@ -37,18 +37,18 @@ This is a **new kind of AI** created to be:
 - limited on purpose  
 
 An MCM doesn’t guess or pretend — it follows clear logic steps, uses inspected
-memory, and builds skills one by one with human review. It never hallucinates.
-If it doesn’t know, it simply says so.
+memory, and builds skills one by one with human review. It is designed to reject
+unsupported answers rather than hallucinate. If it doesn’t know, it should say so.
 
 This is the first AI class built specifically for **reliability and safety**, not
 for sounding human.
 
-MCM = Modest Cognition Model — a new cognitive class defining deterministic, modular, bounded artificial cognition.
+MCM = Modest Cognition Model — a proposed cognitive class defining deterministic, modular, bounded artificial cognition.
 
-This definition supersedes any previous or alternative uses of the acronym MCM within other fields; within the Symbound ecosystem and its derivatives, MCM exclusively refers to the Modest Cognition Model class.
+Within this taxonomy and related Symbound-derived materials, MCM refers to the Modest Cognition Model class. Other fields may use the acronym differently.
 
 Updated Note (2025):
-The Janet line of MCMs now includes a deterministic reasoning core, explicit skill trees, typed memory spine, and schema-gated input pathways. This anchors the MCM class as a reproducible, inspectable cognition model appropriate for scientific use, education, and safety-critical reasoning.
+The Janet line of MCMs now includes a deterministic reasoning core, explicit skill trees, typed memory records, and schema-gated input pathways. This anchors the MCM class as a reproducible, inspectable cognition model appropriate for research, education, and auditable safety work.
 
 ---
 
@@ -76,9 +76,9 @@ It helps:
 
 # A Simple Way to See It
 
-- **Humans** → complex minds  
+- **Humans** → complex biological cognition  
 - **LLMs** → giant pattern machines  
-- **MCMs** → safe, logical tool minds  
+- **MCMs** → bounded deterministic reasoning tools  
 - **SCMs** → simple rule logic  
 
 That’s it.  

@@ -1,8 +1,8 @@
 # The Cognition Scale — Policymaker Brief (v1.0)
 ## A Practical Framework for Regulating Human and Artificial Cognition
 
-This brief defines a simple, enforceable, four-tier model for categorizing all
-cognition systems used in public, commercial, or critical-infrastructure settings.
+This brief defines a simple, enforceable, four-tier model for categorizing human
+and artificial cognition systems used in public, commercial, or critical-infrastructure settings.
 
 The Cognition Scale is substrate-agnostic and focuses on **risk, transparency,
 and behavioral guarantees**, not hype or marketing claims.
@@ -54,7 +54,7 @@ MCMs are appropriate for:
 - safety-critical local systems  
 - government & institutional audits  
 
-They are **structurally safe** because they avoid the unpredictable features of LLMs.
+They are more inspectable than LLM-only systems because they avoid stochastic generation as the decision layer.
 
 ---
 
@@ -75,7 +75,7 @@ Agencies can classify AI systems by architecture rather than marketing claims.
 ### ✔ Predictable Risk Levels  
 LCMs → variable  
 LLMs → unpredictable  
-MCMs → bounded and inspectable  
+MCMs → bounded and inspectable when compliance requirements are met  
 SCMs → trivial risk
 
 ### ✔ Suitable for Legislation  

@@ -7,8 +7,8 @@
 
 # 1. Overview
 
-The Cognition Scale is a four-tier taxonomy designed to classify all known forms
-of cognition — biological and artificial — using structural, architectural, and
+The Cognition Scale is a four-tier taxonomy designed to classify human and
+artificial cognition systems using structural, architectural, and
 behavioral criteria instead of anthropomorphic or capability-based metaphors.
 
 Its purpose is:
@@ -37,7 +37,7 @@ Properties:
 - embodied perception and survival instincts
 - highest known form of open-ended generality
 
-LCMs set the gold standard.  
+LCMs are the biological reference class.  
 Every other cognition system is defined *relative to* LCM.
 
 ---
@@ -62,7 +62,7 @@ transparent or deterministic way. They are highly useful, but not
 
 This is the “explain it to your smartest friend at the pub” version.
 
-There are four types of minds in the world:
+There are four cognition classes in this framework:
 
 ---
 
@@ -98,7 +98,7 @@ A new kind of AI:
 
 It doesn’t pretend to be human.  
 It doesn’t guess.  
-It doesn’t hallucinate.
+It is designed to reject unsupported answers instead of hallucinating.
 
 It’s a **tool**, not a personality.
 
@@ -132,7 +132,7 @@ This scale lets everyone talk clearly.
 |-------|-------------------|
 | **LCM** | Smart animal (humans) |
 | **LLM** | Big pattern guesser |
-| **MCM** | Safe, modular logic mind |
+| **MCM** | Bounded modular reasoning tool |
 | **SCM** | Simple rules |
 
 That’s it.  
